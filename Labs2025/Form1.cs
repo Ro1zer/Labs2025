@@ -21,8 +21,13 @@ namespace Labs2025
         {
             Country first = new Country("United Kingdom", 244_376, 68_265_209, "London", 8_945_309);
             Country second = new Country("United States", 8_080_470, 340_110_988, "Washington, D.C.", 689_545);
-            MessageBox.Show(first.GetString());
-            MessageBox.Show(second.GetString());
+            first.SetName("Ukraine");
+            first.SetSquare(603_550);
+            first.SetPopulation(32_862_000);
+            first.SetCapitalName("Kyiv");
+            first.SetCapitalPopulation(2_952_301);
+            MessageBox.Show(first.ToString());
+            MessageBox.Show(second.ToString());
             Close();
         }
     }
